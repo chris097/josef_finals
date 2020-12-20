@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+    <script type="text/javascript" src="./js/deposit.js"></script>
+</head>
+<body>
+    <div class="form">
+        <form>
+            <div class="form-deposit"> 
+                <div class="deposit-title">BMCC E-BANK</div>
+                <div class="form-deposit-content">
+                    <label class="amount-dept">DEPOSIT AMOUNT:</label>
+                    <input id="amount" type="text" size="10" />  
+                </div>
+                <div class="border"></div>
+            
+                <div class="charge-container">
+                    <div style="">
+                    <label class="charge">CHARGE:</label>
+                    <input id="charge" type="text"  value="0.10" size="10" readonly class="charge-input" /> </div>
+                    <div class="new-bal">	<label>NEW BALANCE:</label> 	
+                    <input id="balance" type="text"  size="10" readonly class="new-bal-input" /> </div>
+                </div>
+                
+                <div class="col-input">
+                    <input type="button" value="MAKE DEPOSIT" onclick="depositTransaction();"/>
+                    <input type="button" value="CLEAR" onclick="clearInput()"  />
+                    <input type="button" value="MAIN MENU" onclick="location.href='menu.html'"/>
+                </div>
+          </div>
+        </form>
+    </div>
+    </body>
+</html>

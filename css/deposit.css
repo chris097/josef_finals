@@ -1,0 +1,83 @@
+.form .form-deposit,
+.form .form-cash{
+    width:530px; 
+    margin:0px auto; 
+    background-color:blue; 
+    color:white; 
+    border:solid black 5px;
+}
+.form .form-deposit .deposit-title,
+.form .form-cash .cash-title{
+    text-align:center; 
+    width:510px; 
+    background-color:orange; 
+    color:black;padding:10px; 
+    padding-top:5px; 
+    font-size:xx-large;
+}
+.form .form-deposit .form-deposit-content,
+.form .form-deposit .cash-content{
+    border-top:solid 4px black; 
+    border-bottom:solid black 4px; 
+    border-left:0px; 
+    border-right:0px; 
+    padding:10px;
+}
+.form .form-deposit .amount-dept,
+.form .form-cash .amount-cash{
+    width:250px; 
+    display:block; 
+    float:left;
+}
+.form .form-deposit .amount-dept > input,
+.form .form-deposit .cash-content{
+    border:solid orange 2px;
+    font-size:x-large;
+}
+.border{
+    background-color:orange;
+    padding:2px;
+}
+.charge-container,
+.cash-container{
+    border-top:solid black 4px;
+    border-bottom:solid black 2px; 
+    border-left:0px; 
+    border-right:0px; 
+    padding:10px;
+}
+.charge-container .charge{
+    width:250px; 
+    display:block; 
+    float:left;
+}
+.charge-container .charge-input{
+    background-color: #CCCCCC;
+    border:solid orange 2px;
+    font-size:x-large;
+}
+.charge-container .new-bal > label{
+    width:250px; 
+    display:block; 
+    float:left;
+}
+.charge-container .new-bal-input{
+    background-color: #CCCCCC;
+    border:solid orange 2px;
+    font-size:x-large;
+}
+.col-input{
+    border-top:solid black 2px;
+    border-left:0px; 
+    border-right:0px;; 
+    text-align:center; 
+    margin: 0px; 
+    padding:10px; 
+    background-color: orange;
+}
+.col-input input{
+    background-color:blue; 
+    color:white; 
+    border:solid black 4px;font-size:x-large;
+}
+

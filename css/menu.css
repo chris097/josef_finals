@@ -1,0 +1,43 @@
+.form{
+    width:100%;
+    font-size: x-large;
+}
+.form .form-content{
+    width:400px;
+    margin:0px auto;
+    background-color:blue;
+    color:white;
+    border:solid black 5px;
+}
+.form .form-content .e-bank{
+    text-align:center;
+    background-color:orange;
+    color:black;padding:10px;
+    padding-top:5px;
+    font-size:xx-large;
+    border-bottom:solid black 4px;
+}
+.form .form-content .form-input{
+    border-top:solid black 0px;
+    border-left:0px;
+    border-right:0px;
+    text-align:center;
+    margin: 0px;
+    padding:10px; 
+    background-color: orange; 
+    float:absolute;
+}
+.form .form-content .bal,
+.form .form-content .deposit,
+.form .form-content .cash{
+    text-align:left
+}
+.form .form-content .bal input,
+.form .form-content .deposit input,
+.form .form-content .cash input{
+    background-color:blue; 
+    color:white; 
+    border:solid black 4px;
+    border:solid orange 2px;
+    font-size:x-large;
+}

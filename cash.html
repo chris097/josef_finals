@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function setInitial()
+        {
+             var value=localStorage.getItem("balance");
+             if (value==null) {localStorage.setItem("balance","1000")};
+        }
+        setInitial();
+        function cashTransaction()
+        {
+            var balance=document.getElementById("balance");
+            var charge=document.getElementById("charge");
+            var amount=document.getElementById("amount");
+            var bal=localStorage.getItem("balance");
+            //alert(amount.value);
+            //alert(charge.value);
+            //alert(bal);
+            bal=parseFloat(bal)-parseFloat(charge.value)-parseFloat(amount.value);
+            //alert("new balance:"+bal);
+            document.getElementById("balance").value=bal;
+            localStorage.setItem("balance",bal);
+        }
+
+        function clearInput() 
+        {
+            var balance =document.getElementById("balance");
+            var amount=document.getElementById("amount");
+            if(balance.value !== Number){
+                return balance.value = ''
+            }
+        }
+     </script>
+ </head>
+ <body>
+ <div class="form">
+     <form>
+         <div class="form-cash"> 
+             <div class="cash-title">BMCC E-BANK</div>
+             <div class="cash-content">
+                 <label class="amount-cash">CASH AMOUNT:</label>
+                 <input type="text" id="amount" size="10" />  
+             </div>
+ 
+             <div class="border"></div>
+             
+             <div class="charge-container">
+                 <div style="">	
+                 <label class="charge">CHARGE:</label> 			
+                 <input id="charge" type="text" value="0.25"size="10" readonly class="charge-input"/> 
+                 </div>
+                 <div class="new-bal">	
+                 <label>NEW BALANCE:</label>
+                 <input id="balance" type="text" size="10" readonly class="new-bal-input"/> 
+                 </div>
+             </div>
+             <div class="col-input">
+                 <input type="button" value="GET CASH" onclick="cashTransaction()"/>
+                 <input type="button" value="CLEAR" onclick="clearInput()" />
+                 <input type="button" value="MAIN MENU" onclick="location.href='menu.html'" />
+             </div>
+       </div>
+     </form>    
+ </div>
+</body>
+</html>
